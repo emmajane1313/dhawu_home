@@ -13,7 +13,7 @@ const Bar: FunctionComponent<BarProps> = ({
       <div className="bg-blue-900 text-white text-sm px-2 py-1 font-bold flex justify-between">
         <div
           className="relative w-fit h-fit flex"
-          dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+          dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
         >
           {info}
         </div>
@@ -36,7 +36,7 @@ const Bar: FunctionComponent<BarProps> = ({
       </div>
       <div
         className="flex gap-4 text-xs px-2 py-1 border-b border-gray-300 bg-gray-100"
-        dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+        dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
       >
         <div className="relative w-fit h-fit">{dict?.file}</div>
         <div className="relative w-fit h-fit">{dict?.edit}</div>

@@ -69,7 +69,7 @@ export default function Gallery({ dict, lang }: ComponentProps) {
             </div>
             <span
               className="text-xs"
-              dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+              dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
             >{`${indice} ${dict?.of} ${PAGINAS.length}`}</span>
             <div
               className="px-2 py-1 border border-black bg-gray-200 text-xs cursor-pointer active:scale-95"
@@ -79,7 +79,7 @@ export default function Gallery({ dict, lang }: ComponentProps) {
             </div>
           </div>
           <div
-            dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+            dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
             className="mt-2 text-xs"
           >{`${dict?.reg} ${indice} ${dict?.of} ${PAGINAS.length}`}</div>
         </div>

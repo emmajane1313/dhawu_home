@@ -47,12 +47,12 @@ export default function Languages({
       <div className="mt-4 border-t border-gray-400 p-2 flex flex-col gap-3">
         <div
           className="font-bold text-blue-800 text-xs"
-          dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+          dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
         >
           {dict?.select}
         </div>
         <div
-          dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+          dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
           className="flex flex-wrap w-full h-fit gap-2 relative"
         >
           {LOCALES_DISPLAY.map((locale, indice) => {

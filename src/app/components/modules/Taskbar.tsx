@@ -35,7 +35,7 @@ export default function Taskbar({ dict, lang }: ComponentProps) {
       </div>
       <h1
         className="relative w-full h-fit mr-2 text-center text-xs galaxy:text-right text-black/80"
-        dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+        dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
       >
         {dict?.made}{" "}
         <a

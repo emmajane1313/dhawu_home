@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { tParams } from "../layout";
 import { getDictionary } from "../dictionaries";
+import NotFoundEntry from "@/app/components/modules/NotFoundEntry";
 
 export const metadata: Metadata = {
   title: "Not Found",
@@ -11,9 +12,8 @@ export const metadata: Metadata = {
 
 export default async function NotFound({ params }: { params: tParams }) {
   const { lang } = await params;
-  console.log({ lang });
   const dict = await (getDictionary as (locale: any) => Promise<any>)(
     lang ?? "en"
   );
-  // return <NotFoundEntry dict={dict} />;
+  return <NotFoundEntry dict={dict} />;
 }

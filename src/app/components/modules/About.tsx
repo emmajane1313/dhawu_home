@@ -37,7 +37,7 @@ export default function About({ dict, lang }: ComponentProps) {
       />
       <div
         className="overflow-auto h-[calc(100%-50px)] p-2 text-xs whitespace-pre-wrap leading-snug"
-        dir={["en", "es", "br", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+        dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
         dangerouslySetInnerHTML={{ __html: dict?.content ?? "" }}
       ></div>
     </div>

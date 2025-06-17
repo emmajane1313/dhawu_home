@@ -16,5 +16,6 @@
   "select": "Tagh cànan:",
   "content": "Chan eil seo ’na thaigh-tasgaidh — ach ’na bhacadh.<br/>Earrann de chànanan nach bu chòir dhaibh a bhith beò — ach tha iad fhathast.<br/>Agus tha iad ro neo-sheasmhach fhathast.<br/><br/>*******<br/><br/>Seo an àite air an lìon far a bheil mairsinn a’ glitchadh. Bidh i a’ priobadh, air a cumail, ach cha bhith i daingeann gu bràth.<br/><br/>*******<br/><br/>Tha sinn a’ fosgladh an dorais gus am fuirich iad beò.<br/><br/>Gupapuyŋu — a-nis.<br/>Gàidhlig — a dh’aithghearr.<br/>An uair sin, cò sam bith a bhruidhneas an ath rud.",
   "of": "de",
-  "reg": "Clàraich"
+  "reg": "Clàraich",
+  "error": "Mearachd 404: Chaidh an duilleag a thoirt thairis le NPCn meallta. Tha sinn a’ barganachadh air a shaoradh."
 }

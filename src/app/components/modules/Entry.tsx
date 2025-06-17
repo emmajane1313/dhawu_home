@@ -18,7 +18,6 @@ export default function Entry({ dict, lang }: { dict: any; lang: string }) {
   const context = useContext(ModalContext);
   const { sensors, changeLanguage, handleDragEnd } = useDnd();
 
-  console.log(context?.windows);
   return (
     <div className="flex items-center justify-center min-h-screen overflow-x-hidden">
       <Sidebar dict={dict} />

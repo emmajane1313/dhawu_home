@@ -7,7 +7,7 @@ const dictionaries = {
   fa: () => import("./dictionaries/fa.json").then((module) => module.default),
   he: () => import("./dictionaries/he.json").then((module) => module.default),
   yi: () => import("./dictionaries/yi.json").then((module) => module.default),
-  br: () => import("./dictionaries/br.json").then((module) => module.default),
+  pt: () => import("./dictionaries/pt.json").then((module) => module.default),
   ym: () => import("./dictionaries/ym.json").then((module) => module.default),
   gd: () => import("./dictionaries/gd.json").then((module) => module.default),
 };
