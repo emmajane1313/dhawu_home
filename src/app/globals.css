@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+  font-family: "Retro";
+  font-weight: 400;
+  src: url("/fonts/retro.ttf");
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Segoe";
+  font-weight: 400;
+  src: url("/fonts/segoe.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: "Sans";
+  font-weight: 400;
+  src: url("/fonts/sans.otf");
+}
+
+@theme {
+  --font-retro: "Retro";
+  --font-sans: "Sans";
+  --font-segoe: "Segoe";
+
+  --breakpoint-galaxy: 30rem;
+}
+
+@layer utilities {
+  .font-retro {
+    font-family: var(--font-retro);
+  }
+
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+
+  .font-segoe {
+    font-family: var(--font-segoe);
+  }
+
+  .z-10 {
+    z-index: 10;
+  }
+
+  .z-20 {
+    z-index: 20;
+  }
+
+  .z-30 {
+    z-index: 30;
   }
 }
 
+html {
+  font-family: var(--font-sans);
+  background: black;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  scrollbar-width: 0px;
+  scrollbar-color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+html::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+html::-webkit-scrollbar-track:active {
+  background-color: transparent !important;
+  opacity: 0;
+}
+
+html::-webkit-scrollbar-thumb:active {
+  background-color: transparent !important;
+}
+
+div::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+div::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+div::-webkit-scrollbar-track:active {
+  background-color: transparent !important;
+  opacity: 0;
+}
+
+div::-webkit-scrollbar-thumb:active {
+  background-color: transparent !important;
 }
