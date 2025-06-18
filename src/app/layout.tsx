@@ -6,9 +6,9 @@ import Providers from "./providers";
 export const metadata: Metadata = {
   title: "Dhäwu",
   metadataBase: new URL("https://dhawu.com/"),
-  description: "Emancipatory Lifestyle Tech.",
+  description: "A fragment of languages that shouldn’t have survived — but did.",
   twitter: {
-    description: "Emancipatory Lifestyle Tech.",
+    description: "A fragment of languages that shouldn’t have survived — but did.",
     creator: "@digitalax_",
     site: "@digitalax_",
     card: "summary_large_image",
