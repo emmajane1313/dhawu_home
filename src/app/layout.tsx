@@ -4,11 +4,19 @@ import { LOCALES } from "./lib/constantes";
 import Providers from "./providers";
 
 export const metadata: Metadata = {
-  title: "Dhäwu",
+  title: "Dhäwu by Emma-Jane MacKinnon-Lee",
   metadataBase: new URL("https://dhawu.com/"),
-  description: "A fragment of languages that shouldn’t have survived — but did.",
+  description:
+    "A fragment of languages that shouldn’t have survived — but did.",
+  openGraph: {
+    title: "Dhäwu by Emma-Jane MacKinnon-Lee",
+    description:
+      "A fragment of languages that shouldn’t have survived — but did.",
+  },
   twitter: {
-    description: "A fragment of languages that shouldn’t have survived — but did.",
+    title: "Dhäwu by Emma-Jane MacKinnon-Lee",
+    description:
+      "A fragment of languages that shouldn’t have survived — but did.",
     creator: "@digitalax_",
     site: "@digitalax_",
     card: "summary_large_image",
