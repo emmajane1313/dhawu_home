@@ -38,6 +38,16 @@ export const PAGINAS: {
     cover: "/images/scot.png",
     enlace: "https://duthchas.emancipa.xyz/",
   },
+  {
+    titulo: "Scots-Yiddish",
+    cover: "/images/jtartan.png",
+    enlace: "https://trebblers.emancipa.xyz/",
+  },
+  {
+    titulo: "Roper River Kriol",
+    cover: "/images/roper.png",
+    enlace: "https://ngukurr.emancipa.xyz/",
+  },
 ];
 
 export const itemStringToLocale: { [key: string]: string } = {

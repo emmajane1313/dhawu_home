@@ -63,17 +63,23 @@ export default function Gallery({ dict, lang }: ComponentProps) {
           <div className="flex items-center justify-between">
             <div
               className="px-2 py-1 border border-black bg-gray-200 text-xs cursor-pointer active:scale-95"
-              onClick={() => setIndice((prev) => (prev > 1 ? 1 : 2))}
+              onClick={() =>
+                setIndice((prev) => (prev > 1 ? indice - 1 : PAGINAS.length))
+              }
             >
               {dict?.prev}
             </div>
             <span
               className="text-xs"
-              dir={["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"}
+              dir={
+                ["en", "es", "pt", "gd", "ym"]?.includes(lang) ? "ltr" : "rtl"
+              }
             >{`${indice} ${dict?.of} ${PAGINAS.length}`}</span>
             <div
               className="px-2 py-1 border border-black bg-gray-200 text-xs cursor-pointer active:scale-95"
-              onClick={() => setIndice((prev) => (prev < 2 ? 2 : 1))}
+              onClick={() =>
+                setIndice((prev) => (prev < PAGINAS.length ? indice + 1 : 1))
+              }
             >
               {dict?.next}
             </div>
