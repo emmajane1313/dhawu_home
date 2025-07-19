@@ -37,16 +37,19 @@ export const PAGINAS: {
     titulo: "Gàidhlig",
     cover: "/images/scot.png",
     enlace: "https://duthchas.emancipa.xyz/",
+    active: true,
   },
   {
     titulo: "Scots-Yiddish",
     cover: "/images/jtartan.png",
     enlace: "https://trebblers.emancipa.xyz/",
+    active: true,
   },
   {
     titulo: "Roper River Kriol",
     cover: "/images/roper.png",
     enlace: "https://ngukurr.emancipa.xyz/",
+    active: true,
   },
 ];
 
