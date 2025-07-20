@@ -58,9 +58,9 @@ export const PAGINAS: {
     active: true,
   },
   {
-    titulo: "Gallego",
-    cover: "/images/gallego.png",
-    enlace: "https://gallego.emancipa.xyz/",
+    titulo: "Galego",
+    cover: "/images/galego.png",
+    enlace: "https://galego.emancipa.xyz/",
     active: true,
   },
 ];
