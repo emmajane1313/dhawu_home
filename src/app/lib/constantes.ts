@@ -51,6 +51,18 @@ export const PAGINAS: {
     enlace: "https://ngukurr.emancipa.xyz/",
     active: true,
   },
+  {
+    titulo: "Gaeilge",
+    cover: "/images/irish.png",
+    enlace: "https://crioch.emancipa.xyz/",
+    active: true,
+  },
+  {
+    titulo: "Gallego",
+    cover: "/images/gallego.png",
+    enlace: "https://gallego.emancipa.xyz/",
+    active: true,
+  },
 ];
 
 export const itemStringToLocale: { [key: string]: string } = {
