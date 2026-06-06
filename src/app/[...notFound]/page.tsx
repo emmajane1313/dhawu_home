@@ -10,6 +10,6 @@ export const metadata: Metadata = {
 };
 
 export default async function NotFoundCatchAll() {
-  const dict = await (getDictionary as (locale: any) => Promise<any>)("en");
+  const dict = await getDictionary("en");
   return <NotFoundEntry dict={dict} />;
 }

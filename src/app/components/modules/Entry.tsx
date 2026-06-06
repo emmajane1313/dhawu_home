@@ -2,11 +2,9 @@
 
 import { restrictToWindowEdges } from "@dnd-kit/modifiers";
 import { DndContext } from "@dnd-kit/core";
-import NoiseCanvas from "./Noise";
 import Sidebar from "./Sidebar";
-import Image from "next/image";
 import useDnd from "../hooks/useDnd";
-import { Window } from "../types/components.types";
+import { ComponentProps, Window } from "../types/components.types";
 import Gallery from "./Gallery";
 import Taskbar from "./Taskbar";
 import About from "./About";
@@ -14,7 +12,7 @@ import Languages from "./Languages";
 import { useContext } from "react";
 import { ModalContext } from "@/app/providers";
 
-export default function Entry({ dict, lang }: { dict: any; lang: string }) {
+export default function Entry({ dict, lang }: ComponentProps) {
   const context = useContext(ModalContext);
   const { sensors, changeLanguage, handleDragEnd } = useDnd();
 

@@ -1,6 +1,8 @@
 import "server-only";
 
-const dictionaries = {
+import type { Dictionary } from "../components/types/components.types";
+
+const dictionaries: Record<string, () => Promise<Dictionary>> = {
   en: () => import("./dictionaries/en.json").then((module) => module.default),
   es: () => import("./dictionaries/es.json").then((module) => module.default),
   ar: () => import("./dictionaries/ar.json").then((module) => module.default),
@@ -12,4 +14,6 @@ const dictionaries = {
   gd: () => import("./dictionaries/gd.json").then((module) => module.default),
 };
 
-export const getDictionary = async (locale) => dictionaries?.[locale]?.();
+export const getDictionary = async (locale: string): Promise<Dictionary> => {
+  return (dictionaries[locale] ?? dictionaries.en)();
+};

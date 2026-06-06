@@ -6,9 +6,6 @@ const nextConfig: NextConfig = {
     scrollRestoration: true,
     optimizeCss: true,
   },
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     remotePatterns: [
       {
@@ -22,11 +19,9 @@ const nextConfig: NextConfig = {
   },
   trailingSlash: true,
   async headers() {
-    let headersConfig: any[] = [];
-
     const allowedOrigins = ["https://emancipa.xyz"];
-    allowedOrigins.forEach((origin) => {
-      headersConfig.push({
+    const headersConfig = allowedOrigins.map((origin) => {
+      return {
         source: "/(.*)",
         headers: [
           {
@@ -43,7 +38,7 @@ const nextConfig: NextConfig = {
             value: "GET, POST, PUT, DELETE, OPTIONS",
           },
         ],
-      });
+      };
     });
 
     return headersConfig;

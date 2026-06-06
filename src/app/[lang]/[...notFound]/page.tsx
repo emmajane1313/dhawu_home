@@ -12,8 +12,6 @@ export const metadata: Metadata = {
 
 export default async function NotFound({ params }: { params: tParams }) {
   const { lang } = await params;
-  const dict = await (getDictionary as (locale: any) => Promise<any>)(
-    lang ?? "en"
-  );
+  const dict = await getDictionary(lang ?? "en");
   return <NotFoundEntry dict={dict} />;
 }

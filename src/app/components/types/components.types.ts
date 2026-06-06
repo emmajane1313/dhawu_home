@@ -5,19 +5,21 @@ export enum Window {
   Languages = "lang",
 }
 
+export type Dictionary = Record<string, string>;
+
 export type ComponentProps = {
-  dict: any;
+  dict: Dictionary;
   lang: string;
 };
 
 export type SidebarButtonProps = {
-  label: string;
+  label?: string;
   icon: string;
   onClick: () => void;
 };
 
 export type SidebarProps = {
-  dict: any;
+  dict: Dictionary;
 };
 
 export interface Position {
@@ -27,14 +29,14 @@ export interface Position {
 }
 
 export type LanguagesProps = {
-  dict: any;
+  dict: Dictionary;
   changeLanguage: (lang: string) => void;
   lang: string;
 };
 
 export type BarProps = {
-  dict: any;
-  info: string;
+  dict: Dictionary;
+  info?: string;
   lang: string;
   onClick: () => void;
 };

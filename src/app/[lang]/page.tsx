@@ -4,6 +4,6 @@ import { tParams } from "./layout";
 
 export default async function Home({ params }: { params: tParams }) {
   const { lang } = await params;
-  const dict = await (getDictionary as (locale: any) => Promise<any>)(lang);
+  const dict = await getDictionary(lang);
   return <Entry dict={dict} lang={lang} />;
 }
